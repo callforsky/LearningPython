@@ -15,6 +15,7 @@ Basically there are around 30 videos on online CS61A. I plan to finish at least 
 schedule below, in hope for pushing me forward on time.
 
 7/06: (Aug 30 -- Sep 02)
+
 7/07: (Sep 04)
 7/08: (Sep 06)
 7/09: (Sep 09)
