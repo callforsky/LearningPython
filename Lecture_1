@@ -1,0 +1,59 @@
+# the first lecutre skims the power of python interpreter. We went over some basic terms and ideas. I will write down 
+# the codes I learned from lecture 1.
+
+# at first, let's try to retrieve Shakespeare's work and do something with it.
+# import a new function from urllib.request, called urlopen
+from urllib.request import urlopen
+
+# associates the name shakespeare with a online file that contains Shakespeare's work.
+shakespeare = urlopen('http://composingprograms.com/shakespeare.txt')
+
+# associates the name words to the set of all unique words that appear in Shakespeare's work.
+# actually, 'set' is a object to build an unordered collection of unique elements.
+# we read the data from the opened URL, then decoe the data into text, and finally split the
+# text into words.
+words = set(shakespeare.read().(decode().split())
+
+{w for w in words if len(w) == 6 and w[::-1] in words}
+# this command evaluates to the set of all Shakespearian words that are simultaneously
+# a word spelled in reverse. 
+
+
+# ok, that is the first part of the lecture 1. Now we turn to try some basic commands.
+
+# find the maximal value
+max(4, 5)
+
+# find the value of 100 to the power of 2
+pow(100,2)
+
+# importing library functions: some simple examples
+
+# from math module we import function 'square root of ...'
+sqrt(256)
+
+# from operator module we import function addition, multiplication, substraction
+from operator import add, sub, mul
+add(14, 28)
+
+sub(100, mul(7, add(8,4)))
+
+# from math module import the value of pi
+from math import pi
+pi * 2
+
+# assign multiple values to multiple names in a single statement:
+a, b = 3, 4
+
+# at last we went over the pure vs. non-pure function.
+# the most obvious non-pure function is print()
+# we will dive into non-pure functions in Ch2 and pure functions in Ch4.
+
+# Lec 1 conlcuded
+
+
+
+
+
+
+
