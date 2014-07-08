@@ -49,8 +49,21 @@ a, b = 3, 4
 # the most obvious non-pure function is print()
 # we will dive into non-pure functions in Ch2 and pure functions in Ch4.
 
-# Lec 1 conlcuded
+#########################
 
+#lab0/1:
+# terminal commands:
+# pwd : show current directory
+# cd : change to following directory
+# cd ~/Documents : ~/ represents /Users/callforsky, that is, the default computer mother directory
+# mkdir : create a file in current directory. ex: mkdir hw1
+# ls : list all file in current directory
+# mv [file1's directory] [file 2's directory] : move file 1 from directory 1 to another directory. 
+#    ex: mv ~/Downloads/hw0.py ~/cs61a/hw/hw0
+# reset : to clear the terminal's window and won't see previous code.
+# clear: same as before
+
+# Lec 1 conlcuded
 
 
 
