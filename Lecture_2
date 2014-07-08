@@ -1,0 +1,77 @@
+# in this lecture we studied function 'definitions."
+
+# ex 1:
+def square(x):
+    return mul(x,x)
+    
+def sum_squares(x,y):
+    return add(square(x),square(y))
+
+# // operator rounds the result down to integer
+
+# A function definition can include some descriptions to help understanding.
+def pressure(v,t,n):
+    """Compute the pressure in pascals of an ideal gas.
+    
+    Applies the ideal gas law: http://en.wikipedia.org/wiki/Ideal_gas_law
+    
+    v -- volume of gas, in cubic meters
+    t -- absolute temperature in degrees kelvin
+    n -- particles of gas
+    """
+    k = 1.38e-23 # Boltzmann's constant
+    return n * k * t / v
+    
+# we can call help(pressure) to retrieve all those descriptions. It's a good reference.
+
+# note: we can set a value in arguments to some default values.
+
+def pressure(v,t,n = 6)
+    ~~~
+    return n * k * t / v
+
+pressure(2,3) # will take n = 6, v = 2, t = 3.
+pressure(2,3,8) # will take n = 8, because a new value is given.
+
+##############
+
+# hw 1
+# Q1 Goal:adding a to the absolute value of b, without calling abs:
+from operator import add, sub
+def a_plus_abs_b(a,b):
+    """Return a+abs(b), but without calling abs.
+    
+    >>> a_plus_abs_b(2,3)
+    5
+    """
+    if b < 0:
+        op = sub(a,b)
+    else:
+        op = add(a,b)
+    return op(a,b)
+
+# Q2
+def two_of_three(a,b,c):
+    """Return x*x + y*y, where x and y are the two largest of a, b, c.
+    
+    >>> two_of_three(1,2,3)
+    13
+    """
+    if a > b and b > c:
+        twolarge = a^2 + b^2
+    elif a > b and b < c:
+        twolarge = a^2 + c^2
+    else:
+        twolarge = b^2 + c^2
+    return twolarge(a, b, c)
+
+
+
+
+
+
+
+
+
+
+
