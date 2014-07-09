@@ -16,7 +16,7 @@ schedule below, in hope for pushing me forward on time.
 
 7/06: (Aug 30 -- Sep 02) (DONE)
 
-7/07: (Sep 04)
+7/07: (Sep 04) (DONE)
 
 7/08: (Sep 06)
 
