@@ -74,9 +74,33 @@ def if_function(condition, true_result, false_result):
         return false_result
 
 # Q4
+def hailstone(n):
+    """Print the hailstone sequence starting at n and return its length.
 
+    >>> a = hailstone(10)  # Seven elements are 10, 5, 16, 8, 4, 2, 1
+    10
+    5
+    16
+    8
+    4
+    2
+    1
+    >>> a
+    7
+    """
+	while n != 1:
+		if n % 2 == 0:
+			print(int(n))
+			n = n / 2
+		else:
+			print(int(n))
+			n = (n * 3) + 1
+	else:
+		return 1
+		
+#######
 
-
+# Lecture 2 concluded.
 
 
 
