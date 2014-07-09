@@ -8,7 +8,7 @@ helplessly on lesson 43 on Learning Python the Hard Way. I found some embedded i
 the course on Learning Python the Hard Way. So I turn to study Berkeley's online CS61A.
 
 Hopefully I will be able to understand philosophy of coding, after learning online CS61A. This repository basically will
-store my practice codes or coding homeworks based on online CS61A, probably mixed some codes from Learning Python the Hard
+store my practice codes or coding homeworks based on online CS61A (https://inst.eecs.berkeley.edu/~cs61a/fa13/), probably mixed some codes from Learning Python the Hard
 Way.
 
 Basically there are around 30 videos on online CS61A. I plan to finish at least 20 videos by 8/1. I submitted a detailed
