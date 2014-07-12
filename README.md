@@ -20,7 +20,7 @@ schedule below, in hope for pushing me forward on time.
 
 7/08: (Sep 06) (DONE)
 
-7/09: (Sep 09)
+7/09: (Sep 09) (DONE)
 
 7/10: (Sep 11)
 
