@@ -1,0 +1,110 @@
+In this lecture we began to study higher-order functions.
+Definition: functions that manipulate functions are called higher-order functions.
+
+The lecturer breaks the reading 1.6 to three sessions, in case that 1.6 is harder. 
+
+In this lecture we specifically focus on using functions as arguments.
+
+An excellent example is Fibonacci sequence.
+
+def fib(n):
+    pre, cur = 0, 1
+    k = 2
+    while n > k:
+        pre, cur = cur, pre + cur
+        k = k + 1
+    return cur
+    
+Attention: to design the function, we shall let one function do exactly one job, the simple is beauty.
+
+Before we going on, we shall learn a new command: assert.
+
+Example:
+assert 3 > 2, 'This is true.'
+assert 2 > 3, 'This is false.'
+
+Adding this assert into definitions:
+def area_square(r):
+    assert r > 0, 'A length must be positive.'
+    return r * r
+    
+now we define another two functions, in order to help us smooth class material:
+def area_circle(r):
+    return r * r * pi
+
+def area_hexagon(r):
+    return r * r * 3 * sqrt(3) / 2
+    
+With all three basic functions on hand, now we can move on with a new function, a higher-order function:
+
+def area(r, shape_constant):
+    assert r > 0, 'A length must be positive.'
+    return r * r * shape_constant
+    
+So this above example illustrates that the arguments could be a computation process instead of a number.
+
+Now we are going to explore another example:
+def sum_natural(n):
+    total, k = 0 , 1
+    while n > k:
+        total, k = total + k, k + 1
+    return total
+
+def sum_cubes(n):
+    total, k = 0 , 1
+    while n > k:
+        total, k = total + pow(k, 3), k + 1
+    return total
+
+Now, we are looking for a higher-order function way to redesign these functions:
+def identity(k):
+    return k
+
+def cube(k):
+    return pow(k, 3)
+
+def summation(n, term): # term means how to compute each term.
+    """
+    >>> summation(5, cube)
+    225
+    """
+    total, k = 0, 1
+    while k <= n:
+        total, k = total + term(k), k + 1
+    return total
+    
+With this new funciton on hand, we can rewrite some previous functions:
+def sum_naturals(n):
+    return summation(n, identity)
+    
+-----
+Now we turn to look at the function within a function.
+
+example:
+def make_adder(n):
+    """" Return a function that takes one argument k and return k + n
+    >>> add_three = make_adder(3)
+    >>> add_three = make_adder(4)
+    7
+    """
+    def adder(k):
+        return k + n
+    return adder
+    
+>>> add_three(2000)(13)
+2013
+
+ATTENTION: this part is somewhat hard to understand currently, pay more attention to higher-order functions!
+    
+Note: the lecturer seems to use python3 -i ex.py to open the interactive model on python, where he can type in the definitions into the python interpreter. '-i' command
+
+
+
+
+
+
+
+
+
+
+
