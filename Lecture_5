@@ -1,0 +1,60 @@
+This lecture we are still going to study higher-order functions. The core of almost all programming languages.
+
+We shall begin with an example:
+
+def apply_twice(f, x):
+    return f(f(x))
+
+def square(x):
+    return x * x
+
+>>> apply_twice(square, 2)
+16
+
+Now let's examining a new kind of function:
+
+{
+def repeat(f, x):
+    while f(x) != x
+        x = f(x)
+    return x
+
+def g(y):
+    return (y + 5) // 3
+    
+z = repeat(g, 7)
+}
+
+One shall examine and understand the above function completely.
+
+Another example of nested functions:
+{
+def square(x):
+    return x * x
+
+def triple(x):
+    return 3 * x
+
+def compose(f, g):
+    def h(x):
+        return f(g(x))
+
+>>> squiple = compose(square, triple)
+>>> squiple(5) = 225
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
