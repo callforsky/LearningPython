@@ -22,7 +22,7 @@ schedule below, in hope for pushing me forward on time.
 
 7/09: (Sep 09) (DONE)
 
-7/10: (Sep 11)
+7/10: (Sep 11) (DONE)
 
 7/11: --- Break --- time to pick up progress
 
