@@ -1,0 +1,64 @@
+We started with lambda function:
+
+x = 10
+square = x * x
+>>> square
+100
+square = lambda x: x * x
+>>> square(4)
+16
+>>> square(x)
+100
+
+Currying: Transforming a multi-argument function into a single-argument, higher-order function.
+Know: add(2, 3) = 5
+from operator import add
+newfunction = lambda f: lambda x: lambda y: f(x, y)
+>>> newfunction(add)(2)(3)
+5
+
+IMPORTANT: find the square root of a number using Babylonian Method:
+def square_root(a):
+    x = 1
+    while x * x != a:
+        print(x)
+        x = square_root_update(x, a)
+    return x
+
+def square_root_update(x, a):
+    return (x + a/x) / 2
+    
+CUBE ROOT:
+def cube_root(a):
+    x = 1
+    while x * x * x != a:
+        print(x)
+        x = cube_root_update(x, a)
+    return x
+
+def cube_root_update(x, a):
+    return (2 * x + a / (x * x)) / 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
