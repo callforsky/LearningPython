@@ -30,7 +30,7 @@ schedule below, in hope for pushing me forward on time.
 
 7/13: (Sep 16) (DONE)
 
-7/14: (Sep 18)
+7/14: (Sep 18) (DONE)
 
 7/15: (Sep 20)
 
