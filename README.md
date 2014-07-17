@@ -28,7 +28,7 @@ schedule below, in hope for pushing me forward on time.
 
 7/12: (Sep 13) (DONE)
 
-7/13: (Sep 16)（DONE)
+7/13: (Sep 16) (DONE)
 
 7/14: (Sep 18)
 
