@@ -1,0 +1,53 @@
+We started with the Cascade Function
+
+def cascade(n):
+    if n < 10:
+        print(n)
+    else:
+        print(n)
+        cascade(n // 10)
+        print(n)
+        
+Then we look at the counting the number of partitions:
+
+def count_partititions(n, m):
+    if n == 0:
+        return 1
+    elif n < 0:
+        return 0
+    elif m == 0:
+        return 0
+    else:
+        with_m = count_partition(n-m, m)
+        without_m = count_partition(n, m - 1)
+        return with_m + without_m
+        
+We look at calculating the possibility of rolling at least k in n six-faced dice.
+
+{
+def ways_to_roll_at_least(k, n):
+    if k <= 0:
+        return pow(5, n)
+    elif k == 0:
+        return 0
+    else:
+        total, d = 0, 2
+        while d <= 6:
+            total = total + ways_to_roll_at_least(k-d, n-1)
+            d = d + 1
+        return total
+        
+def chance_to_roll_at_least(k, n):
+    return ways_to_roll_at_least(k, n) / pow(6, n)
+}
+
+
+
+
+
+
+
+
+
+
+
