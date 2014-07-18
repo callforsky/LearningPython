@@ -1,0 +1,21 @@
+@Test-Driven Environment
+
+Write the test before you write the function.
+A test will clarify the domain, range, and behavior of a function.
+
+Examples:
+1)
+def gcd(m, n):
+    """Returns the largest k that divides both m and n
+    k, m, n are all positive integers.
+    
+    >>> gcd(12, 8)
+    4
+    """
+    if m == n:  # we can improvd the code: if m % n == 0
+        return m
+    elif m < n:
+        return gcd(n, m)
+    else:
+        return gcd(m-n, n)
+  
