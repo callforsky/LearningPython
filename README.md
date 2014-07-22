@@ -38,7 +38,7 @@ schedule below, in hope for pushing me forward on time.
 
 7/17: --- Break --- time to pick up progress
 
-7/18: (Sep 25)
+7/18: (Sep 25) (DONE)
 
 7/19: (Sep 27)
 
