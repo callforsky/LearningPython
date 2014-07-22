@@ -1,0 +1,71 @@
+Let's begin the class notes immediately:
+
+@Objects:
+Objects represent information. They consist of data and behavior, bundled together to create abstractions.
+Objects can reprent things, but also properties, interactions, & processes.
+
+A type of object is called a class. Classes are first-class values in Python.
+
+@Object-oriented programming:
+a metaphor for organizing large programs.
+
+In Python, every value is an object.
+All objects have attributes.
+
+A lot of data manipulation happen through object methods.
+
+Functions do one thing, objects do many related things.
+
+Example(1):
+from datetime import date
+firstmeet = date(2014, 6, 16)
+current = date(2014, 7, 21)
+str(firstmeet - current)
+firstmeet.day
+firstmeet.year
+firstmeet.strftime("%A %B %d")
+
+@Pairs
+
+pair = (1, 2) # a tuple, yes.
+x,y = pair
+>>> pair[0]
+1
+>>> pair[1]
+2
+from operator import getitem
+>>> getitem(pair, 0)
+1
+>>> getitem(pair, 1)
+2
+
+Example(2):
+from fractions import gcd
+def rational(n, d)
+    """Reduce the n/d to its lowest form."""
+    g = gcd(n, d)
+    return (n // g, d // g)
+
+
+@ Data Abstraction:
+compound objects combine objects together.
+
+An abstract data type lets us manipulate compound objects as units.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
