@@ -1,0 +1,12 @@
+@ Sequence
+tuple: number = (1, 2, 3, 4) # cannot be modified
+>>> len(number)
+4
+
+list: number2 = [1, 2, 3, 4] # can be modified
+
+A tuple can contain tuples as elements.
+
+@ Recursive list
+
+Comment: Well, this is a simpler lecture that introduces the sequence and how to insert tuples inside a tuple. Not many to write about.
