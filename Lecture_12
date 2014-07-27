@@ -1,0 +1,90 @@
+@ For statement
+
+stairs = (1, 2, 3, 4, 5, 6)
+>>> len(stairs)
+6
+>>> stairs[6]
+6
+>>> stairs.count(3)
+1
+
+def count(s, value):
+    total = 0
+    for element in s:
+        if element == s:
+            total = total + 1
+    return total
+
+# creating a range:
+>>> tuple(range(0,4))
+(0, 1, 2, 3)
+
+@ membership:
+list = (1, 2, 3, 4)
+>>> 2 in list
+True
+>>> 5 in list
+False
+>>> 5 not in list
+True
+
+@ List"
+Say A is a list.
+A.pop()
+A.extend()
+A.remove()
+A.append()
+
+Example of list comprehension:
+>>> suits = ['spade', 'club', 'heart', 'diamond']
+>>> [suit.upper() for suit in suits]
+['SPADE', 'CLUB', 'HEART', 'DIAMOND']
+>>> [suit[1:4] for suit in suits if len(suit) == 5]
+['ear', 'pad']
+
+List Comprehension: [<map ex> for <name> in <iter exp> if <filterexp>]
+
+@ Dictionary:
+
+numerals = ['A':10, 'B':20]
+>>> numerals.get('A', 0)
+10
+>>> numerals.get('C', 0)
+0
+
+# Another way to create a dictioanry:
+>>> dict([(2,3), (3,4), (4,9)])
+{2:3, 3:4, 4:9}
+
+@ Dictionary Comprehension
+>>> {k: k*k for k in range(3,6)}
+{3:9, 4:16, 5:25}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
