@@ -44,7 +44,7 @@ schedule below, in hope for pushing me forward on time.
 
 7/20: (Sep 30) (DONE)
 
-7/21: (Oct 02)（DONE)
+7/21: (Oct 02) (DONE)
 
 7/22: (Oct 04)
 
